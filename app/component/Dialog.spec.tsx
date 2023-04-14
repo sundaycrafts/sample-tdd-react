@@ -24,7 +24,6 @@ describe("<Dialog />", () => {
     userEvent.clear(usernameInput);
     userEvent.type(usernameInput, "johndoe");
 
-    // See https://storybook.js.org/docs/react/essentials/actions#automatically-matching-args to learn how to setup logging in the Actions panel
     userEvent.click(
       await screen.findByRole("button", { name: "Save changes" })
     );
